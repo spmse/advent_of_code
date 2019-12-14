@@ -13,13 +13,20 @@ jobs:
           git clone https://github.com/vlang/v
           cd v
           make
-          echo Installation finished - make V compile itself
-          ./v v.v
-          echo compiled V 
+          echo ## Installation finished - make V compile itself
+          ./v -o v v.v
+          echo ## compiled V 
+          ./v symlink
+          # created symlink for V
           ls
-          echo creating test.v file
+          echo
+          echo ## creating test.v file
           touch test.v
           echo "print('Hello')" > test.v
+          echo ##
+          echo ## wrote content to test.v
+          echo ##
+          cat test.v
           v run test.v
       - name: Run a multi-line script
         run: |
