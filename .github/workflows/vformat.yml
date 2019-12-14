@@ -22,4 +22,3 @@ jobs:
       - name: Format all v files in commit
         run: |
           ls
-          v fmt *.v
