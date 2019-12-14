@@ -13,21 +13,13 @@ jobs:
           git clone https://github.com/vlang/v
           cd v
           make
-          echo Installation finished - make V compile itself
           ./v -o v v.v
-          echo compiled V 
           sudo ./v symlink
-          ls
-          echo
-          echo creating test.v file
           touch test.v
           echo "print('Hello')" > test.v
-          echo
-          echo wrote content to test.v
-          echo content of test.v
           cat test.v
           v run test.v
       - name: Format all v files in commit
         run: |
           ls
-          v fmt *.v
+          echo v fmt .
