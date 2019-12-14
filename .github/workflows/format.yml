@@ -16,7 +16,7 @@ jobs:
           echo ## Installation finished - make V compile itself
           ./v -o v v.v
           echo ## compiled V 
-          ./v symlink
+          sudo ./v symlink
           # created symlink for V
           ls
           echo
