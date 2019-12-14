@@ -15,7 +15,6 @@ fn main() {
 }
 
 fn intcode(input mut []int) []int {
-
     for i := 0; i < input.len; i += 4 {
         println("Current value of i: $i")
         mut r1 := 0
@@ -27,7 +26,7 @@ fn intcode(input mut []int) []int {
             r2 = input[i + 2]
             result_index = input[i + 3]
         }
-
+        // check opcode
         match input[i] {
             1 {
                 println('Setting Value of input[$i]: ${input[result_index]}')
