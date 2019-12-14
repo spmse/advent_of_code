@@ -4,23 +4,24 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: install-v
-      run: |
-        git clone https://github.com/vlang/v
-        cd v
-        make
-        echo Installation finished
-        echo ls
-        echo creating test.v file
-        touch test.v
-        echo "print('Hello')" > test.v
-        v run test.v
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      - uses: actions/checkout@v1
+      - name: install-v
+        run: |
+          git clone https://github.com/vlang/v
+          cd v
+          make
+          echo Installation finished - make V compile itself
+          ./v v.v
+          echo compiled V 
+          ls
+          echo creating test.v file
+          touch test.v
+          echo "print('Hello')" > test.v
+          v run test.v
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
