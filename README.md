@@ -1,6 +1,6 @@
 # Advent of code
 
-My collection of solutions to puzzles from adventofcode.com written in V.
+My collection of solutions to puzzles from adventofcode.com written in the V programming language.
 
 ## Solutions
 
