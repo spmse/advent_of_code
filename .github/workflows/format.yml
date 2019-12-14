@@ -22,4 +22,4 @@ jobs:
       - name: Format all v files in commit
         run: |
           ls
-          echo v fmt .
+          v fmt .
