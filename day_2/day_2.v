@@ -12,8 +12,6 @@ fn main() {
         $input\n
         ${intcode(mut input)}'
     ) 
-
-    println(get_inputs(mut input))
 }
 /**
 * TASK I
