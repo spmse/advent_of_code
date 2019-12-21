@@ -12,8 +12,12 @@ fn main() {
         $input\n
         ${intcode(mut input)}'
     ) 
-}
 
+    println(get_inputs(mut input))
+}
+/**
+* TASK I
+*/
 fn intcode(input mut []int) []int {
     for i := 0; i < input.len; i += 4 {
         println("Current value of i: $i")
@@ -49,3 +53,7 @@ fn intcode(input mut []int) []int {
     }
     return input
 }
+
+/**
+* TASK II
+*/
