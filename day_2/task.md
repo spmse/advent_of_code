@@ -1,6 +1,10 @@
-# Day II pt. I
+# Day II
+
+> **ONLY PART ONE SO FAR**
 
 ## Description
+
+### Part One
 
 An Intcode program is a list of integers separated by commas (like 1,0,0,3,99). To run one, start by looking at the first integer (called position 0). Here, you will find an opcode - either 1, 2, or 99. The opcode indicates what to do; for example, 99 means that the program is finished and should immediately halt. Encountering an unknown opcode means something went wrong.
 
@@ -13,6 +17,8 @@ Opcode 2 works exactly like opcode 1, except it multiplies the two inputs instea
 Once you're done processing an opcode, move to the next one by stepping forward 4 positions.
 
 ## TL;DR
+
+### One
 
 Build a program to compute a "`intcode`-program" (integer lists).
 Given the program `intcode = [1,2,3,0]` it can be interpreted as:
